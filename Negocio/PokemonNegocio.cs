@@ -116,6 +116,7 @@ namespace Negocio
             }
         }
  
+
         public void agregar(Pokemon nuevo)
         {
             AccesoDatos datos = new AccesoDatos();

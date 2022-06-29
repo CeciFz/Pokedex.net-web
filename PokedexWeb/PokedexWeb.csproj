@@ -69,8 +69,13 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="detallePokemon.aspx" />
+    <Content Include="EjemplosConDropDown\dropDownEjemplos.aspx" />
+    <Content Include="EjemplosConDropDown\dropDownListEnlazados.aspx" />
+    <Content Include="EjemplosConDropDown\dropDownListEnlazadosUpdatePanel.aspx" />
+    <Content Include="EjemplosConDropDown\dropDownListSeleccionarElementos.aspx" />
     <Content Include="Global.asax" />
     <Content Include="listaPokemons.aspx" />
+    <Content Include="EjemplosConDropDown\updatePanel.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +92,34 @@
     </Compile>
     <Compile Include="detallePokemon.aspx.designer.cs">
       <DependentUpon>detallePokemon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownEjemplos.aspx.cs">
+      <DependentUpon>dropDownEjemplos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownEjemplos.aspx.designer.cs">
+      <DependentUpon>dropDownEjemplos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListEnlazados.aspx.cs">
+      <DependentUpon>dropDownListEnlazados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListEnlazados.aspx.designer.cs">
+      <DependentUpon>dropDownListEnlazados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListEnlazadosUpdatePanel.aspx.cs">
+      <DependentUpon>dropDownListEnlazadosUpdatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListEnlazadosUpdatePanel.aspx.designer.cs">
+      <DependentUpon>dropDownListEnlazadosUpdatePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListSeleccionarElementos.aspx.cs">
+      <DependentUpon>dropDownListSeleccionarElementos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\dropDownListSeleccionarElementos.aspx.designer.cs">
+      <DependentUpon>dropDownListSeleccionarElementos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -106,6 +139,13 @@
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EjemplosConDropDown\updatePanel.aspx.cs">
+      <DependentUpon>updatePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EjemplosConDropDown\updatePanel.aspx.designer.cs">
+      <DependentUpon>updatePanel.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />

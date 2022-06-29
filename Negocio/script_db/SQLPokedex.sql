@@ -31,3 +31,11 @@ Insert into POKEMONS (Numero, Nombre, Descripcion,Activo) values (1,'','',1)
 update POKEMONS set IdTipo = 1 , IdDebilidad = 2 , UrlImagen = '' where Numero = 27
 
 update POKEMONS set UrlImagen = null where Numero = 9
+
+
+create Procedure storedListar as 
+SELECT P.Id, Numero, Nombre, P.Descripcion, UrlImagen, E.Descripcion Tipo, D.Descripcion Debilidad, P.IdTipo, P.IdDebilidad
+FROM POKEMONS P, ELEMENTOS E, ELEMENTOS D
+WHERE E.Id = P.IdTipo AND D.Id = P.IdDebilidad AND P.Activo = 1
+
+exec storedListar
